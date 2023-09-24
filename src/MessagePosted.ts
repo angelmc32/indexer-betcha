@@ -1,9 +1,10 @@
 import { ponder } from "@/generated";
 
 ponder.on(
-  "BetchaRound/v1/Wagered:MessagePosted",
+  "BetchaRound/v1/MessagePosted:MessagePosted",
   async ({ event, context }) => {
     const { MessagePostedEvent } = context.entities;
+    console.log("yaaaaa");
 
     await MessagePostedEvent.create({
       id: `${event.transaction.hash}-${event.log.logIndex}`,
