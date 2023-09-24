@@ -16,4 +16,6 @@ type WageredEvent @entity {
   tokenAddress: String!
   amount: BigInt!
   contractAddress: String!
+  metadataURI: String!
+  settlementAvailableAt: BigInt!
 }
