@@ -9,6 +9,7 @@ ponder.on("BetchaRound/v1/Wagered:Wagered", async ({ event, context }) => {
       gambler: event.params.gambler,
       tokenAddress: event.params.tokenAddress,
       amount: event.params.amount,
+      contractAddress: event.log.address,
     },
   });
 });

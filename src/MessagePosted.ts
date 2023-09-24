@@ -10,6 +10,7 @@ ponder.on(
       data: {
         author: event.params.author,
         content: event.params.content,
+        contractAddress: event.log.address,
       },
     });
   }
